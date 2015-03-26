@@ -19,14 +19,20 @@ void loop() {
 if(digitalRead(8) == 0)
   Keyboard.releaseAll();
 else
-  Keyboard.press('d');
+{
+    Keyboard.press('d');
 delay(100);  
+}
 
-if(digitalRead(8) == 0)
+
+if(digitalRead(9) == 0)
   Keyboard.releaseAll();
 else
+{
   Keyboard.press('a');
 delay(100);  
+}
+
 
 }
 
